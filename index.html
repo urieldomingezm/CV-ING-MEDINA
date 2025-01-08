@@ -3,40 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
+    <title>Portafolio Ing. Medina</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Mi Nombre</h1>
-        <p>Ingeniero en Informática</p>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Angel Uriel Domínguez Medina</h1>
+            <p class="lead">Ingeniero en Informática | Desarrollador Full-Stack</p>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main class="container my-5">
-        <section>
-            <h2>Sobre Mí</h2>
-            <p>Descripción breve sobre tu experiencia y objetivos.</p>
+        <!-- Sobre Mí -->
+        <section id="about" class="mb-5">
+            <h2 class="text-primary border-bottom pb-2">Sobre Mí</h2>
+            <p>
+                Soy un ingeniero en informática apasionado por la tecnología y el desarrollo de software. Me especializo en crear soluciones eficientes 
+                y escalables, combinando mis habilidades técnicas con un enfoque creativo. Mi objetivo es contribuir al crecimiento de proyectos 
+                innovadores mientras desarrollo mis propias competencias.
+            </p>
         </section>
-        <section>
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li>Lenguajes de programación: C#, Python, JavaScript</li>
-                <li>Frameworks: React, .NET</li>
-                <li>Base de datos: PostgreSQL</li>
+
+        <!-- Habilidades Técnicas -->
+        <section id="skills" class="mb-5">
+            <h2 class="text-primary border-bottom pb-2">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Lenguajes de programación:</strong> C#, Python, JavaScript</li>
+                        <li><strong>Frameworks:</strong> React, .NET, Bootstrap</li>
+                        <li><strong>Bases de datos:</strong> PostgreSQL, MySQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Herramientas:</strong> Git, Visual Studio Code, Docker</li>
+                        <li><strong>Metodologías:</strong> SCRUM, Kanban</li>
+                        <li><strong>Sistemas Operativos:</strong> Linux, Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Profesional -->
+        <section id="experience" class="mb-5">
+            <h2 class="text-primary border-bottom pb-2">Experiencia Profesional</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollador Full-Stack</h5>
+                    <h6 class="card-subtitle text-muted">Empresa XYZ | Enero 2023 - Presente</h6>
+                    <p class="card-text">
+                        Diseñé e implementé sistemas web con tecnologías modernas, optimizando el rendimiento y la experiencia del usuario.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ingeniero de Software</h5>
+                    <h6 class="card-subtitle text-muted">Empresa ABC | Junio 2021 - Diciembre 2022</h6>
+                    <p class="card-text">
+                        Colaboré en el desarrollo de aplicaciones móviles y herramientas internas, mejorando la eficiencia en un 30%.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="mb-5">
+            <h2 class="text-primary border-bottom pb-2">Proyectos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Asistencias</h5>
+                            <p class="card-text">Sistema basado en QR para gestionar asistencias estudiantiles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Plataforma de Radio Streaming</h5>
+                            <p class="card-text">Plataforma para transmitir y reproducir música en línea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicación Móvil de Screen Mirroring</h5>
+                            <p class="card-text">App móvil para duplicar pantalla en televisores LG vía Wi-Fi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section id="education" class="mb-5">
+            <h2 class="text-primary border-bottom pb-2">Educación</h2>
+            <ul class="list-unstyled">
+                <li><strong>Ingeniería en Informática</strong> - Universidad XYZ (2017 - 2021)</li>
+                <li><strong>Certificación en Desarrollo Web</strong> - Platzi (2022)</li>
             </ul>
         </section>
-        <section>
-            <h2>Experiencia Profesional</h2>
-            <p>Detalles de tu experiencia laboral.</p>
-        </section>
-        <section>
-            <h2>Educación</h2>
-            <p>Detalles de tu formación académica.</p>
-        </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Mi Nombre</p>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Angel Uriel Domínguez Medina. Todos los derechos reservados.</p>
     </footer>
+
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
