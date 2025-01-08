@@ -6,7 +6,7 @@
     <title>Portafolio Ing. Medina</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Animaciones -->
+    <!-- Custom Styles -->
     <style>
         body {
             scroll-behavior: smooth;
@@ -24,6 +24,10 @@
             border-bottom: 3px solid #0d6efd;
             display: inline-block;
             margin-bottom: 1rem;
+        }
+        .project-img {
+            object-fit: cover;
+            height: 200px;
         }
     </style>
 </head>
@@ -70,54 +74,31 @@
             </div>
         </section>
 
-        <!-- Experiencia Profesional -->
-        <section id="experience" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Experiencia Profesional</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Desarrollador Full-Stack</h5>
-                    <h6 class="card-subtitle text-muted">Empresa XYZ | Enero 2023 - Presente</h6>
-                    <p class="card-text">
-                        Diseñé e implementé sistemas web con tecnologías modernas, optimizando el rendimiento y la experiencia del usuario.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Ingeniero de Software</h5>
-                    <h6 class="card-subtitle text-muted">Empresa ABC | Junio 2021 - Diciembre 2022</h6>
-                    <p class="card-text">
-                        Colaboré en el desarrollo de aplicaciones móviles y herramientas internas, mejorando la eficiencia en un 30%.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!-- Proyectos -->
         <section id="projects" class="mb-5 fade-in">
             <h2 class="text-primary section-header">Proyectos</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 1">
+                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 1">
                         <div class="card-body">
                             <h5 class="card-title">Sistema de Asistencias</h5>
                             <p class="card-text">Sistema basado en QR para gestionar asistencias estudiantiles.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 2">
+                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 2">
                         <div class="card-body">
                             <h5 class="card-title">Plataforma de Radio Streaming</h5>
                             <p class="card-text">Plataforma para transmitir y reproducir música en línea.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 3">
+                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 3">
                         <div class="card-body">
                             <h5 class="card-title">Aplicación Móvil de Screen Mirroring</h5>
                             <p class="card-text">App móvil para duplicar pantalla en televisores LG vía Wi-Fi.</p>
