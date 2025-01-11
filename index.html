@@ -1,220 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Ing. Medina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <style>
-        body {
-            scroll-behavior: smooth;
-            visibility: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Gamer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #333333);
+      color: white;
+    }
 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease;
-        }
-        .fade-in.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section-header {
-            border-bottom: 3px solid #0d6efd;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        .project-img {
-            object-fit: cover;
-            height: 200px;
-        }
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-            z-index: 1000;
-        }
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-        }
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-            border-width: 0.5em;
-        }
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1050;
-            background-color: #0d6efd;
-        }
-        .navbar-nav .nav-item .nav-link {
-            color: white;
-        }
-        .navbar-nav .nav-item .nav-link:hover {
-            color: #0d6efd;
-        }
-    </style>
+    .navbar {
+      background: #000;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #f0f0f0;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      color: #f0f0f0;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff6f00;
+    }
+
+    .header {
+      padding-top: 100px;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 320px;
+      height: 320px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .audio-player {
+      max-width: 500px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .footer a {
+      color: #ff6f00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-    <div id="loader" class="loader">
-        <div class="spinner-border text-light" role="status">
-            <span class="visually-hidden">Cargando...</span>
-        </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Podcast Gamer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#episodios">Episodios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-        <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Angel Uriel Domínguez Medina</h1>
-            <p class="lead">Ingeniero en Informática</p>
-            <a href="#contact" class="btn btn-light btn-lg mt-3">Contáctame</a>
-        </div>
-    </header>
+  <div class="header">
+    <h1>¡Bienvenido al Podcast Gamer!</h1>
+    <img src="https://th.bing.com/th/id/OIP.cOMVxxcdhbgeId2A01t0dwAAAA?rs=1&pid=ImgDetMain" alt="Imagen de portada">
+    <div class="audio-player">
+      <audio controls style="width: 100%; outline: none;">
+        <source src="http://example.com:4446/stream" type="audio/mpeg" />
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+    </div>
+  </div>
 
-    <main class="container my-5">
-        <section id="about" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Sobre Mí</h2>
-            <p>
-                Soy un ingeniero en informática apasionado por la tecnología y el desarrollo de software. Me especializo en crear soluciones eficientes 
-                y escalables, combinando mis habilidades técnicas con un enfoque creativo. Mi objetivo es contribuir al crecimiento de proyectos 
-                innovadores mientras desarrollo mis propias competencias.
-            </p>
-        </section>
+  <footer class="footer">
+    <p>© 2025 Ing. Medina. Todos los derechos reservados.</p>
+  </footer>
 
-        <section id="skills" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Habilidades Técnicas</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><strong>Lenguajes de programación:</strong> C#, Python, JavaScript</li>
-                        <li><strong>Frameworks:</strong> React, .NET, Bootstrap</li>
-                        <li><strong>Bases de datos:</strong> PostgreSQL, MySQL</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><strong>Herramientas:</strong> Git, Visual Studio Code, Docker</li>
-                        <li><strong>Metodologías:</strong> SCRUM, Kanban</li>
-                        <li><strong>Sistemas Operativos:</strong> Linux, Windows</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Proyectos</h2>
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Sistema de Asistencias</h5>
-                            <p class="card-text">Sistema basado en QR para gestionar asistencias estudiantiles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Plataforma de Radio Streaming</h5>
-                            <p class="card-text">Plataforma para transmitir y reproducir música en línea.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top project-img" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Aplicación Móvil de Screen Mirroring</h5>
-                            <p class="card-text">App móvil para duplicar pantalla en televisores LG vía Wi-Fi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certificates" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Certificados</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Certificación en Desarrollo Web - Platzi (2022)</li>
-                <li class="list-group-item">Curso Avanzado de React - Udemy (2023)</li>
-                <li class="list-group-item">Certificado en Bases de Datos - Coursera (2021)</li>
-            </ul>
-        </section>
-
-        <section id="languages" class="mb-5 fade-in">
-            <h2 class="text-primary section-header">Idiomas</h2>
-            <ul class="list-unstyled">
-                <li><strong>Español:</strong> Nativo</li>
-                <li><strong>Inglés Técnico:</strong> Intermedio</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer id="contact" class="bg-dark text-white text-center py-4">
-        <p>Contacto: <a href="mailto:urielmedina7u7@outlook.com" class="text-primary">urielmedina7u7@outlook.com</a></p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="https://github.com" target="_blank" class="text-white">
-                <i class="bi bi-github fs-4"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="text-white">
-                <i class="bi bi-twitter fs-4"></i>
-            </a>
-            <a href="https://discord.com" target="_blank" class="text-white">
-                <i class="bi bi-discord fs-4"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="text-white">
-                <i class="bi bi-linkedin fs-4"></i>
-            </a>
-        </div>
-        <p>&copy; 2025 Angel Uriel Domínguez Medina. Todos los derechos reservados.</p>
-    </footer>
-
-    <button id="back-to-top" class="btn btn-primary">
-        <i class="bi bi-arrow-up"></i>
-    </button>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const fadeElements = document.querySelectorAll('.fade-in');
-        window.addEventListener('scroll', () => {
-            fadeElements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    el.classList.add('show');
-                }
-            });
-
-            const backToTopButton = document.getElementById('back-to-top');
-            if (window.scrollY > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-
-        document.getElementById('back-to-top').addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            loader.style.display = 'none';
-            document.body.style.visibility = 'visible';
-        });
-    </script>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
