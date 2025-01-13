@@ -302,13 +302,11 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Elimina la parte que oculta el cuerpo y el cargador
-    // Se elimina el siguiente código:
-    // window.addEventListener('load', () => {
-    //     const loader = document.getElementById('loader');
-    //     loader.style.display = 'none';
-    //     document.body.style.visibility = 'visible';
-    // });
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'none';
+        document.body.style.visibility = 'visible';
+    });
 </script>
 </body>
 </html>
