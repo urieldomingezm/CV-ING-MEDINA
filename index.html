@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Ing. Medina</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="private/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="private/assets/librerias/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="private/assets/css/style.css">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Angel Uriel Domínguez Medina</h1>
+            <p class="lead">Ingeniero en Informática</p>
+            <!-- Foto personal -->
+            <div class="mt-4">
+                <img src="private/assets/img/urielmedina.jpg" alt="Foto de Angel Uriel Domínguez Medina"
+                    class="rounded-circle img-fluid"
+                    style="width: 190px; height: 240px; object-fit: cover; border: 1px solid white;">
+            </div>
+            <!-- Información adicional -->
+            <div class="mt-3">
+                <p><i class="bi bi-geo-alt-fill"></i> Mederos, Monterrey, N.L.</p>
+                <p><i class="bi bi-calendar-fill"></i> 27 de diciembre 2002</p>
+                <p class="lead">CV<a
+                    href="private/assets/img/certificados-duc/CV angel uriel dominguez medina.pdf"
+                    class="btn btn-link ms-2" style="color: #fff;" download>
+                    Descargar
+                </a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5 fade-in">
+            <h2 class="text-primary section-header">Sobre Mí</h2>
+            <p>
+                Ingeniero en Informática con experiencia en desarrollo web/móvil, optimización de sistemas e interfaces,
+                y gestión de infraestructura en la nube. Enfocado en herramientas modernas y metodologías ágiles para
+                impulsar la innovación.</p>
+        </section>
+
+        <section id="skills" class="mb-5 fade-in">
+            <h2 class="text-primary section-header">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Lenguajes de programación:</strong> CSS, JavaScript, PHP, C#, Python y Java
+                        </li>
+                        <li><strong>Frameworks:</strong> React, Node.js, Bootstrap, Tailwind CSS, Bulma, Chart.js,
+                            Foundation, Jest, Enzyme, Django y PHP Slim</li>
+                        <li><strong>Bases de datos:</strong> MySQL, PostgreSQL, Firebase, MongoDB, Sybase y redis</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Herramientas:</strong> Git, Power BI, Docker, Figma y GitHub</li>
+                        <li><strong>Plataformas en la nube:</strong> Azure y AWS</li>
+                        <li><strong>Metodologías:</strong> SCRUM y Kanban</li>
+                        <li><strong>Herramientas de ticketing:</strong> Jira, Zendesk y ServiceNow.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages" class="mb-5 fade-in">
+            <h2 class="text-primary section-header">Idiomas</h2>
+            <ul class="list-unstyled">
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés Técnico:</strong> Intermedio</li>
+            </ul>
+        </section>
+
+        <section id="certificates" class="mb-5 fade-in">
+            <h2 class="text-primary section-header">Certificados</h2>
+            <div class="accordion accordion-flush" id="certificatesAccordion">
+                <!-- Acordeón de Programación -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="programmingHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#programmingCollapse" aria-expanded="false"
+                            aria-controls="programmingCollapse">
+                            Programación
+                        </button>
+                    </h2>
+                    <div id="programmingCollapse" class="accordion-collapse collapse"
+                        aria-labelledby="programmingHeader" data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Google IT Automation with Python – Coursera (Noviembre 2024
+                                    – Diciembre
+                                    2024)</li>
+                                <li class="list-group-item">Google IT Support (Agoto 2024 – Diciembre 2024)</li>
+                                <li class="list-group-item">Desarrollador de JavaScript (Node.js y React) – Capacítate
+                                    para el Empleo (Nov 2024)<a
+                                        href="private/assets/img/certificados-duc/Desarrollador de JavaScript (Node.js).pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a></li>
+                                <li class="list-group-item">Desarrollador PHP (Orientado a Objetos) – Capacítate para el
+                                    Empleo (Noviembre 2024)</li>
+                                <li class="list-group-item">Programador en C# – Capacítate para el Empleo (Noviembre
+                                    2024)
+                                </li>
+                                <li class="list-group-item">Diplomado de Sitios Web – Capacítate
+                                    para el Empleo (Noviembre 2024)<a
+                                        href="private/assets/img/certificados-duc/Técnico en integridad web.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a></li>
+                                <li class="list-group-item">Introduction to Git and GitHub – Coursera (Noviembre 2024)<a
+                                        href="private/assets/img/certificados-duc/Introduction to Git and GitHub.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a></li>
+                                <li class="list-group-item">Design thinking para app– soy lider.net (abril 2024)<a
+                                        href="private/assets/img/certificados-duc/design thinking para app.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a></li>
+                                <li class="list-group-item">Crash Course on Python – Coursera (Abril 2024 – Mayo 2024)<a
+                                        href="private/assets/img/certificados-duc/Crash Course on Python.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a></li>
+                                <li class="list-group-item">Diplomado: Ciencia de Datos – TECNM (Octubre 2023 – Febrero
+                                    2024)
+                                    <a href="private/assets/img/certificados-duc/Ciencia de datos.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Foundations of User Experience (UX) Design – Coursera
+                                    (Noviembre
+                                    2024) <a
+                                        href="private/assets/img/certificados-duc/Fundations of user experience (UX) Design.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Build Dynamic User Interfaces (UI) for Websites – Coursera
+                                    (Noviembre 2024)
+                                    <a href="private/assets/img/certificados-duc/Build Dynamic User Interfaces (UI) for Websites.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Tester – Capacitate para trabajo
+                                    (Noviembre 2023)
+                                    <a href="private/assets/img/certificados-duc/Tester.pdf" class="btn btn-link ms-2"
+                                        download>
+                                        Descargar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acordeón de Metodología -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="methodologyHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#methodologyCollapse" aria-expanded="false"
+                            aria-controls="methodologyCollapse">
+                            Metodologías
+                        </button>
+                    </h2>
+                    <div id="methodologyCollapse" class="accordion-collapse collapse"
+                        aria-labelledby="methodologyHeader" data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">La Semilla Ágil: Contexto de Scrum – Academia Ágil (Abril
+                                    2024)
+                                    <a href="private/assets/img/certificados-duc/La semilla agil contexto de scrum.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Scrum Fundamentals – SCRUMstudy (Abril 2024)
+                                    <a href="private/assets/img/certificados-duc/Scrum Fundamentls.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Introducción a Six Sigma – Coursera (Abril 2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acordeón de Inglés -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="englishHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#englishCollapse" aria-expanded="false" aria-controls="englishCollapse">
+                            Inglés
+                        </button>
+                    </h2>
+                    <div id="englishCollapse" class="accordion-collapse collapse" aria-labelledby="englishHeader"
+                        data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">English for Career Development (Agosto 2024 – Diciembre
+                                    2024)
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acordeón de Nube -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="cloudHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#cloudCollapse" aria-expanded="false" aria-controls="cloudCollapse">
+                            Nube
+                        </button>
+                    </h2>
+                    <div id="cloudCollapse" class="accordion-collapse collapse" aria-labelledby="cloudHeader"
+                        data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Oracle Cloud Data Management (Abril 2024)
+                                    <a href="private/assets/img/certificados-duc/Oracle Cloud Data Management.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Oracle Cloud Infrastructure (Abril 2024)
+                                    <a href="private/assets/img/certificados-duc/Oracle Cloud Infrastructure.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">La nube AWS (Diciembre 2023)
+                                    <a href="private/assets/img/certificados-duc/LA NUBE ASW.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Fundametos en computo en la nube - Capacitate para trabajo
+                                    (Diciembre 2023)
+                                    <a href="private/assets/img/certificados-duc/Fundamentos del cómputo en la nube.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acordeón de base de datos -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="bdHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#bdCollapse" aria-expanded="false" aria-controls="bdCollapse">
+                            Base de datos
+                        </button>
+                    </h2>
+                    <div id="bdCollapse" class="accordion-collapse collapse" aria-labelledby="bdHeader"
+                        data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Curador de datos (Octubre 2023)<a
+                                        href="private/assets/img/certificados-duc/curador de datos.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                                <li class="list-group-item">Database Foundations (Marzo 2023)<a
+                                        href="private/assets/img/certificados-duc/Base de datos.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acordeón de otros -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="otrosHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#otrosCollapse" aria-expanded="false" aria-controls="otrosCollapse">
+                            Otros
+                        </button>
+                    </h2>
+                    <div id="otrosCollapse" class="accordion-collapse collapse" aria-labelledby="otrosHeader"
+                        data-bs-parent="#certificatesAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Excel basico a Avanzado - Santander Academy (Octubre 2024)<a
+                                        href="private/assets/img/certificados-duc/Excel intermedio.pdf"
+                                        class="btn btn-link ms-2" download>
+                                        Descargar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5 fade-in">
+            <h2 class="text-primary section-header">Proyectos</h2>
+            <p>
+                Aquí se muestran algunos proyectos destacados que he desarrollado, empleando diversas tecnologías y
+                bases de datos.
+            </p>
+            <div class="row g-4">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="private/assets/img/proyectos-img/proyecto1/portada.jpeg"
+                            class="card-img-top project-img" alt="Proyecto 1" data-bs-toggle="modal"
+                            data-bs-target="#proyecto1" data-bs-slide-to="1">
+                        <div class="card-body">
+                            <h5 class="card-title">SII (Sistema Integral de Información) Tec Victoria</h5>
+                            <p class="card-text">
+                                Desarrollado con <strong>PHP 5.3.3</strong>, <strong>Sybase</strong>,
+                                <strong>Chart.js</strong>, <strong>Bootstrap</strong> y
+                                <strong>Just-Validate.js</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top project-img" alt="Proyecto 2"
+                            data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="1">
+                        <div class="card-body">
+                            <h5 class="card-title">Walter (Plataforma para estudiantes y docentes)</h5>
+                            <p class="card-text">
+                                Plataforma web desarrollada con <strong>React con php 8.x</strong> y
+                                <strong>PostgreSQL</strong> Esta es
+                                desarrollada para docentes y estudiantes como TEAMS y Schology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="private/assets/img/proyectos-img/proyecto3/SII1.jpeg" class="card-img-top project-img"
+                            alt="Proyecto 3" data-bs-toggle="modal" data-bs-target="#proyecto3" data-bs-slide-to="1">
+                        <div class="card-body">
+                            <h5 class="card-title">Plataforma de Fansite para agencias (Habbo)</h5>
+                            <p class="card-text">
+                                plataforma web <strong>Php 8.x</strong> y <strong>mysql</strong> esta plataforma es para
+                                fansites de agencias de juego (habbo)
+                                con el proposito de experimentar y administrar usuarios, ascensos, tiempos de los
+                                usuarios, ventas y pagas para los trabajadores de dicha agencia
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="private/assets/img/proyectos-img/proyecto3/SII1.jpeg" class="card-img-top project-img"
+                            alt="Proyecto 3" data-bs-toggle="modal" data-bs-target="#proyecto3" data-bs-slide-to="1">
+                        <div class="card-body">
+                            <h5 class="card-title">Excel con python</h5>
+                            <p class="card-text">
+                                plataforma web <strong>Php 8.x</strong> y <strong>mysql</strong> esta plataforma es para
+                                fansites de agencias de juego (habbo)
+                                con el proposito de experimentar y administrar usuarios, ascensos, tiempos de los
+                                usuarios, ventas y pagas para los trabajadores de dicha agencia
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Más proyectos... -->
+            </div>
+
+            <!-- MODALES DE PROYECTOS... -->
+            <div class="modal fade" id="proyecto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">PROYECTO SII (Sistema de Informacion
+                                Integral)</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="private/assets/img/proyectos-img/proyecto1/SII1.png" width="400px" height="400px"
+                                alt="PROYECTO SII">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="proyecto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">PROYECTO SII (Sistema de Informacion
+                                Integral)</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="private/assets/img/proyectos-img/proyecto1/SII1.png" width="400px" height="400px"
+                                alt="PROYECTO SII">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="proyecto3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Fansite</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="private/assets/img/proyectos-img/proyecto3/SII1.jpeg" width="300px" height="400px"
+                                alt="PROYECTO SII">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-dark text-white text-center py-4">
+        <p>Contacto: <a href="mailto:urielmedina7u7@outlook.com" class="text-primary">urielmedina7u7@outlook.com</a></p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/urieldomingezm" target="_blank" class="text-white">
+                <i class="bi bi-github fs-4"></i>
+            </a>
+            <a href="https://x.com/urieldomingezm" target="_blank" class="text-white">
+                <i class="bi bi-twitter fs-4"></i>
+            </a>
+            <a href="https://discord.com" target="_blank" class="text-white">
+                <i class="bi bi-discord fs-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/angel-uriel-dominguez-medina-6532bb2a6/" target="_blank"
+                class="text-white">
+                <i class="bi bi-linkedin fs-4"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Ing. Medina. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="private/assets/librerias/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+        window.addEventListener('scroll', () => {
+            fadeElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('show');
+                }
+            });
+
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+
+</html>
