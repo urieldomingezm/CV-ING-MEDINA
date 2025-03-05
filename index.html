@@ -7,10 +7,17 @@
     <meta name="description" content="Start your development with JohnDoe landing page.">
     <meta name="author" content="Devcrud">
     <title>Portafolio Ing. Medina</title>
+
+    <!-- ICONO -->
+    <link rel="shortcut icon" href="private/assets/img/image (13).jpg" type="image/x-icon">
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
     <!-- Bootstrap + JohnDoe main styles -->
+    <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/johndoe.css">
+
 </head>
 
 
@@ -32,7 +39,12 @@
             </div>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+
+
+    <!-- MENU / NAVBAR -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" data-spy="affix" style="background-color: #e3f2fd;"
+        data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,19 +60,22 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resumen</a>
+                        <a href="#resume" class="nav-link">Sobre mi</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
-                        <h5 class="brand-title">Angel uriel</h5>
-                        <div class="brand-subtitle">Ing. informatica</div>
+                        <h5 class="brand-title">Angel uriel dominguez medina</h5>
+                        <div class="brand-subtitle">Ing. en informatica</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Certificados" class="nav-link">Certificados</a>
                     </li>
                     <li class="nav-item">
                         <a href="#blog" class="nav-link">Blog</a>
@@ -70,7 +85,9 @@
         </div>
     </nav>
 
-    <!--  -->
+    <!-- TERMINA NAVBAR -->
+
+    <!-- SOBRE MI -->
 
     <div class="container-fluid">
         <div id="about" class="row about-section">
@@ -131,7 +148,7 @@
         </div>
     </div>
 
-    <!--Resume Section-->
+    <!-- RESUMEN SECTION -->
     <section class="section" id="resume">
         <div class="container">
             <h2 class="mb-5"><span class="text-danger">Sobre</span> mi</h2>
@@ -186,7 +203,7 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>hTL5 &amp; CSS3</h6>
+                            <h6>HTMLL &amp; CSS3</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 97%"
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -243,60 +260,241 @@
         </div>
     </section>
 
-    <!-- MIS SERVICIOS -->
+    <!-- END RESUMEN SECTION -->
 
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">Mi</span> Servicios</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
+    <!-- MIS CERTIFICADOS -->
+
+    <section id="Certificados" class="section bg-custom-gray">
+        <h2 class="text-primary section-header">Certificados</h2>
+        <div class="accordion accordion-flush" id="certificatesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="programmingHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#programmingCollapse" aria-expanded="false" aria-controls="programmingCollapse">
+                        Programación
+                    </button>
+                </h2>
+                <div id="programmingCollapse" class="accordion-collapse collapse" aria-labelledby="programmingHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Google IT Automation with Python – Coursera (Noviembre 2024
+                                – Diciembre
+                                2024)</li>
+                            <li class="list-group-item">Google IT Support (Agoto 2024 – Diciembre 2024)</li>
+                            <li class="list-group-item">Desarrollador de JavaScript (Node.js y React) – Capacítate
+                                para el Empleo (Nov 2024)<a
+                                    href="private/assets/img/certificados-duc/Desarrollador de JavaScript (Node.js).pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a></li>
+                            <li class="list-group-item">Desarrollador PHP (Orientado a Objetos) – Capacítate para el
+                                Empleo (Noviembre 2024)</li>
+                            <li class="list-group-item">Programador en C# – Capacítate para el Empleo (Noviembre
+                                2024)
+                            </li>
+                            <li class="list-group-item">Diplomado de Sitios Web – Capacítate
+                                para el Empleo (Noviembre 2024)<a
+                                    href="private/assets/img/certificados-duc/Técnico en integridad web.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a></li>
+                            <li class="list-group-item">Introduction to Git and GitHub – Coursera (Noviembre 2024)<a
+                                    href="private/assets/img/certificados-duc/Introduction to Git and GitHub.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a></li>
+                            <li class="list-group-item">Design thinking para app– soy lider.net (abril 2024)<a
+                                    href="private/assets/img/certificados-duc/design thinking para app.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a></li>
+                            <li class="list-group-item">Crash Course on Python – Coursera (Abril 2024 – Mayo 2024)<a
+                                    href="private/assets/img/certificados-duc/Crash Course on Python.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a></li>
+                            <li class="list-group-item">Diplomado: Ciencia de Datos – TECNM (Octubre 2023 – Febrero
+                                2024)
+                                <a href="private/assets/img/certificados-duc/Ciencia de datos.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Foundations of User Experience (UX) Design – Coursera
+                                (Noviembre
+                                2024) <a
+                                    href="private/assets/img/certificados-duc/Fundations of user experience (UX) Design.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Build Dynamic User Interfaces (UI) for Websites – Coursera
+                                (Noviembre 2024)
+                                <a href="private/assets/img/certificados-duc/Build Dynamic User Interfaces (UI) for Websites.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Tester – Capacitate para trabajo
+                                (Noviembre 2023)
+                                <a href="private/assets/img/certificados-duc/Tester.pdf" class="btn btn-link ms-2"
+                                    download>
+                                    Descargar
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
+            </div>
+            <!-- Acordeón de Metodología -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="methodologyHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#methodologyCollapse" aria-expanded="false" aria-controls="methodologyCollapse">
+                        Metodologías
+                    </button>
+                </h2>
+                <div id="methodologyCollapse" class="accordion-collapse collapse" aria-labelledby="methodologyHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">La Semilla Ágil: Contexto de Scrum – Academia Ágil (Abril
+                                2024)
+                                <a href="private/assets/img/certificados-duc/La semilla agil contexto de scrum.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Scrum Fundamentals – SCRUMstudy (Abril 2024)
+                                <a href="private/assets/img/certificados-duc/Scrum Fundamentls.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Introducción a Six Sigma – Coursera (Abril 2024)</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <!-- Acordeón de Inglés -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="englishHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#englishCollapse" aria-expanded="false" aria-controls="englishCollapse">
+                        Inglés
+                    </button>
+                </h2>
+                <div id="englishCollapse" class="accordion-collapse collapse" aria-labelledby="englishHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">English for Career Development (Agosto 2024 – Diciembre
+                                2024)
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Acordeón de Nube -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="cloudHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#cloudCollapse" aria-expanded="false" aria-controls="cloudCollapse">
+                        Nube
+                    </button>
+                </h2>
+                <div id="cloudCollapse" class="accordion-collapse collapse" aria-labelledby="cloudHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Oracle Cloud Data Management (Abril 2024)
+                                <a href="private/assets/img/certificados-duc/Oracle Cloud Data Management.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Oracle Cloud Infrastructure (Abril 2024)
+                                <a href="private/assets/img/certificados-duc/Oracle Cloud Infrastructure.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">La nube AWS (Diciembre 2023)
+                                <a href="private/assets/img/certificados-duc/LA NUBE ASW.pdf" class="btn btn-link ms-2"
+                                    download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Fundametos en computo en la nube - Capacitate para trabajo
+                                (Diciembre 2023)
+                                <a href="private/assets/img/certificados-duc/Fundamentos del cómputo en la nube.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Acordeón de base de datos -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="bdHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#bdCollapse" aria-expanded="false" aria-controls="bdCollapse">
+                        Base de datos
+                    </button>
+                </h2>
+                <div id="bdCollapse" class="accordion-collapse collapse" aria-labelledby="bdHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Curador de datos (Octubre 2023)<a
+                                    href="private/assets/img/certificados-duc/curador de datos.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                            <li class="list-group-item">Database Foundations (Marzo 2023)<a
+                                    href="private/assets/img/certificados-duc/Base de datos.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Acordeón de otros -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="otrosHeader">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#otrosCollapse" aria-expanded="false" aria-controls="otrosCollapse">
+                        Otros
+                    </button>
+                </h2>
+                <div id="otrosCollapse" class="accordion-collapse collapse" aria-labelledby="otrosHeader"
+                    data-bs-parent="#certificatesAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Excel basico a Avanzado - Santander Academy (Octubre 2024)<a
+                                    href="private/assets/img/certificados-duc/Excel intermedio.pdf"
+                                    class="btn btn-link ms-2" download>
+                                    Descargar
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- CERTIFICADOS END -->
 
-    <!-- Portfolio Section -->
+    <!-- SECTION PORTAFOLIO -->
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">Mi</span> Portafolio</h1>
@@ -323,7 +521,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">SII (Sistema Integral de Informacion)</h6>
-                                    <p class="subtitle">Desarrollado con PHP 5.3.3, Sybase, Chart.js, Bootstrap y Just-Validate.js.</p>
+                                    <p class="subtitle">Desarrollado con PHP 5.3.3, Sybase, Chart.js, Bootstrap y
+                                        Just-Validate.js.</p>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +534,8 @@
                                 <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">Morrys GO</h6>
-                                    <p class="subtitle">Plataforma móvil para iOS y Android, similar a las plataformas de pedir taxis como Didi o Uber, desarrollada con React Native y Fire base.</p>
+                                    <p class="subtitle">Plataforma móvil para iOS y Android, similar a las plataformas
+                                        de pedir taxis como Didi o Uber, desarrollada con React Native y Fire base.</p>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +584,11 @@
                                 <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">Excel con python</h6>
-                                    <p class="subtitle">Este proyecto utiliza <strong>Python</strong> para automatizar la generación de reportes en <strong>Excel</strong>. Se emplean las librerías <strong>pandas</strong>, <strong>openpyxl</strong> y <strong>xlsxwriter</strong> para manipular datos, formatear archivos y agregar gráficos dinámicos.</p>
+                                    <p class="subtitle">Este proyecto utiliza <strong>Python</strong> para automatizar
+                                        la generación de reportes en <strong>Excel</strong>. Se emplean las librerías
+                                        <strong>pandas</strong>, <strong>openpyxl</strong> y <strong>xlsxwriter</strong>
+                                        para manipular datos, formatear archivos y agregar gráficos dinámicos.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -479,14 +683,26 @@
             </div>
         </div>
     </section>
-    
-    <!-- End of portfolio section -->
 
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <!-- END SECTION PORTAFOLIO -->
+
+
+    <!-- FOOTER  -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"
+        style="background-color: #e3f2fd;">
+        <p class="col-md-4 mb-0 text-muted">© 2025 Ing. Medina</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
-        <p class="text-center text-muted">© 2025 Ing. Medina</p>
     </footer>
+
+    <!-- END FOOTER -->
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -498,12 +714,9 @@
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-    <!-- Google mpas -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 
 </body>
 
