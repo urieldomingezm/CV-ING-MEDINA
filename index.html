@@ -1,213 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
+    <meta name="description"
+        content="Portafolio profesional de Angel Uriel Dominguez Medina - Ingeniero en Informática">
+    <meta name="author" content="Angel Uriel Dominguez Medina">
     <title>Portafolio Ing. Medina</title>
 
     <!-- ICONO -->
     <link rel="shortcut icon" href="private/assets/img/image (13).jpg" type="image/x-icon">
 
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Bootstrap + JohnDoe main styles -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
 
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
+<body class="bg-gray-50">
     <!-- HEADER -->
-
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="header-title">Angel uriel</h1>
-                <h1 class="header-title">dominguez medina</h1>
-                <h6 class="header-mono">Ing. en informatica</h6>
+    <header class="gradient-bg text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
+                    Angel Uriel
+                </h1>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+                    Dominguez Medina
+                </h1>
+                <h6 class="text-xl md:text-2xl font-light opacity-90">
+                    Ingeniero en Informática
+                </h6>
+                <div class="mt-8">
+                    <a href="#about"
+                        class="inline-block bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                        Conoce más
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- END HEADER -->
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="private/assets/img/urielmedina.jpg" alt="Angel Uriel"
+                        class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h5 class="font-semibold text-gray-800">Angel Uriel Dominguez Medina</h5>
+                        <div class="text-sm text-gray-600">Ing. en Informática</div>
+                    </div>
+                </div>
 
-    <!-- MENU / NAVBAR -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300">Acerca de mí</a>
+                    <a href="#resume" class="text-gray-700 hover:text-blue-600 transition duration-300">Experiencia</a>
+                    <a href="#portfolio"
+                        class="text-gray-700 hover:text-blue-600 transition duration-300">Portafolio</a>
+                    <a href="#certificados"
+                        class="text-gray-700 hover:text-blue-600 transition duration-300">Certificados</a>
+                </div>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" data-spy="affix" style="background-color: #e3f2fd;"
-        data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Experiencia</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="private/assets/img/urielmedina.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Angel uriel dominguez medina</h5>
-                        <div class="brand-subtitle">Ing. en informatica</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Certificados" class="nav-link">Certificados</a>
-                    </li>
-                </ul>
+                <button class="md:hidden text-gray-700" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- END NAVBAR -->
+    <!-- SOBRE MÍ -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-center mb-6 text-gray-800">Sobre mí</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Ingeniero en Informática con experiencia en desarrollo web/móvil, optimización de
+                            sistemas e interfaces, y gestión de infraestructura en la nube. Enfocado en herramientas
+                            modernas y
+                            metodologías ágiles para impulsar la innovación.
+                        </p>
+                        <a href="private/assets/img/certificados-duc/CV angel uriel dominguez medina.pdf"
+                            class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+                            download>
+                            <i class="fas fa-download mr-2"></i>
+                            Descargar CV
+                        </a>
+                    </div>
 
-    <!-- SOBRE MI -->
-
-    <div class="container">
-        <div id="about" class="row about-section justify-content-center">
-            <div class="col-lg-4 about-card">
-                <h3 class="font text-center">Sobre mi</h3>
-                <br>
-                <p class="mt-20">Ingeniero en Informática con experiencia en desarrollo web/móvil, optimización de
-                    sistemas e interfaces, y gestión de infraestructura en la nube. Enfocado en herramientas modernas y
-                    metodologías ágiles para impulsar la innovación.</p>
-                <a href="private/assets/img/certificados-duc/CV angel uriel dominguez medina.pdf"
-                    class="btn btn-link ms-2" download>
-                    Descargar cv
-                </a></li>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="text-center">Informacion</h3>
-                <br>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Fecha nacimiento </span> : 27/12/2002</li>
-                    <li><span>Correo electronico</span> : urielmedina7u7@outlook.com</li>
-                    <li><span>Telefono</span> : +52 8341620284</li>
-                    <li><span>Ubicacion</span> : Mederos, avenida lazado cardenas, Monterrey, Nuevo leon.</li>
-                </ul>
+                    <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-bold text-center mb-6 text-gray-800">Información</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-birthday-cake text-blue-600 w-6 mr-3"></i>
+                                <span class="font-semibold text-gray-700 mr-2">Fecha nacimiento:</span>
+                                <span class="text-gray-600">27/12/2002</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-blue-600 w-6 mr-3"></i>
+                                <span class="font-semibold text-gray-700 mr-2">Email:</span>
+                                <span class="text-gray-600">urielmedina7u7@outlook.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-blue-600 w-6 mr-3"></i>
+                                <span class="font-semibold text-gray-700 mr-2">Teléfono:</span>
+                                <span class="text-gray-600">+52 8341620284</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 w-6 mr-3 mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-gray-700 mr-2">Ubicación:</span>
+                                    <span class="text-gray-600">Mederos, Avenida Lázaro Cárdenas, Monterrey, Nuevo
+                                        León</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- END SOBRE MI -->
+    </section>
 
-    <!-- RESUMEN SECTION -->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Experiencia</span> y Habilidades</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Experiencia</h4>
-                                <span class="line"></span>
-                            </div>
+    <!-- EXPERIENCIA Y HABILIDADES -->
+    <section id="resume" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">
+                    <span class="text-red-600">Experiencia</span> y Habilidades
+                </h2>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Experiencia -->
+                    <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
+                            <h4 class="text-2xl font-bold">Experiencia</h4>
                         </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2025 - Present</h6>
-                            <P>UX Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-                                recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2022 - 2024</h6>
-                            <P>Freelance</P>
-                            <P class="subtitle">Desarrollador web full stack independiente desarrollando diferentes
-                                software con php, python, c#, ruby, react y react native entre otros.</P>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Educacion</h4>
-                                <span class="line"></span>
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h6 class="text-red-600 font-semibold mb-2">2025 - Presente</h6>
+                                <h5 class="font-bold text-gray-800 mb-2">UX Developer</h5>
+                                <p class="text-gray-600 text-sm">
+                                    Desarrollo de interfaces de usuario centradas en la experiencia del usuario,
+                                    implementando mejores prácticas de UX/UI.
+                                </p>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2020 agosto - actualidad </h6>
-                            <P>Ing. en informatica</P>
-                            <P class="subtitle">Instituto tecnologico de ciudad victoria. tamaulipas.</P>
-                            <hr>
-                            <h6 class="title text-danger">2017 agosto - 2020 enero</h6>
-                            <P>Tecnico en informatica</P>
-                            <P class="subtitle">Cemsadet 12 La pesca, Tamaulipas.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Habilidades</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Comunicacion</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Resolucion de problemas</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Trabjo en equipo</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Creatividad</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Adaptabilidad</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <hr class="my-4">
+                            <div>
+                                <h6 class="text-red-600 font-semibold mb-2">2022 - 2024</h6>
+                                <h5 class="font-bold text-gray-800 mb-2">Freelance</h5>
+                                <p class="text-gray-600 text-sm">
+                                    Desarrollador web full stack independiente desarrollando diferentes
+                                    software con PHP, Python, C#, Ruby, React y React Native entre otros.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Idiomas</h4>
-                                <span class="line"></span>
+
+                    <!-- Educación -->
+                    <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-6">
+                            <h4 class="text-2xl font-bold">Educación</h4>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h6 class="text-red-600 font-semibold mb-2">2020 agosto - actualidad</h6>
+                                <h5 class="font-bold text-gray-800 mb-2">Ing. en Informática</h5>
+                                <p class="text-gray-600 text-sm">
+                                    Instituto Tecnológico de Ciudad Victoria, Tamaulipas.
+                                </p>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <h6 class="text-red-600 font-semibold mb-2">2017 agosto - 2020 enero</h6>
+                                <h5 class="font-bold text-gray-800 mb-2">Técnico en Informática</h5>
+                                <p class="text-gray-600 text-sm">
+                                    Cemsadet 12 La Pesca, Tamaulipas.
+                                </p>
                             </div>
                         </div>
-                        <div class="card-body pb-2">
-                            <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <!-- Habilidades e Idiomas -->
+                    <div class="space-y-8">
+                        <!-- Habilidades -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6">
+                                <h4 class="text-2xl font-bold">Habilidades</h4>
                             </div>
-                            <h6>Spanish</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="p-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Comunicación</span>
+                                            <span class="text-sm text-gray-500">97%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 97%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Resolución de
+                                                problemas</span>
+                                            <span class="text-sm text-gray-500">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Trabajo en equipo</span>
+                                            <span class="text-sm text-gray-500">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Creatividad</span>
+                                            <span class="text-sm text-gray-500">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Adaptabilidad</span>
+                                            <span class="text-sm text-gray-500">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Idiomas -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-orange-600 to-red-600 text-white p-6">
+                                <h4 class="text-2xl font-bold">Idiomas</h4>
+                            </div>
+                            <div class="p-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">English</span>
+                                            <span class="text-sm text-gray-500">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Español</span>
+                                            <span class="text-sm text-gray-500">100%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -216,204 +302,150 @@
         </div>
     </section>
 
-    <!-- END RESUMEN SECTION -->
+    <!-- PORTAFOLIO -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-center mb-12">
+                    <span class="text-red-600">Mi</span> Portafolio
+                </h1>
 
-    <!-- SECTION PORTAFOLIO -->
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Mi</span> Portafolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        Nuevos
-                    </a>
-                    <a href="#" data-filter=".react">
+                <!-- Filtros -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button
+                        class="filter-btn bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300"
+                        data-filter="all">
+                        Todos
+                    </button>
+                    <button
+                        class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300"
+                        data-filter="react">
                         React
-                    </a>
-                    <a href="#" data-filter=".php">
-                        Php
-                    </a>
-                    <a href="#" data-filter=".python">
-                        python
-                    </a>
-                    <a href="#" data-filter=".ko">
-                        c#
-                    </a>
+                    </button>
+                    <button
+                        class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300"
+                        data-filter="php">
+                        PHP
+                    </button>
+                    <button
+                        class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300"
+                        data-filter="python">
+                        Python
+                    </button>
+                    <button
+                        class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition duration-300"
+                        data-filter="csharp">
+                        C#
+                    </button>
                 </div>
 
-                <div class="portfolio-container">
-                    <div class="col-md-6 col-lg-4 php">
-                        <div class="portfolio-item">
-                            <img src="private/assets/img/proyectos-img/proyecto1/SII3.png" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">SII (Sistema Integral de Informacion)</h6>
-                                    <p class="subtitle">Desarrollado con PHP 5.3.3, Sybase, Chart.js, Bootstrap y
-                                        Just-Validate.js.</p>
-                                </div>
+                <!-- Proyectos -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyecto 1 -->
+                    <div class="portfolio-item php card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="private/assets/img/proyectos-img/proyecto1/SII3.png"
+                                class="w-full h-48 object-cover transition duration-300 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <button class="bg-white text-gray-800 px-4 py-2 rounded-lg font-semibold">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h6 class="text-xl font-bold text-gray-800 mb-2">SII (Sistema Integral de Información)</h6>
+                            <p class="text-gray-600 text-sm">
+                                Desarrollado con PHP 5.3.3, Sybase, Chart.js, Bootstrap y Just-Validate.js.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">PHP</span>
+                                <span
+                                    class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full ml-1">Sybase</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 react">
-                        <div class="portfolio-item">
-                            <img src="private/assets/img/proyectos-img/proyecto4/morris.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Morrys GO</h6>
-                                    <p class="subtitle">Plataforma móvil para iOS y Android, similar a las plataformas
-                                        de pedir taxis como Didi o Uber, desarrollada con React Native y Fire base.</p>
-                                </div>
+                    <!-- Proyecto 2 -->
+                    <div class="portfolio-item react card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="private/assets/img/proyectos-img/proyecto4/morris.jpg"
+                                class="w-full h-48 object-cover transition duration-300 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <button class="bg-white text-gray-800 px-4 py-2 rounded-lg font-semibold">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h6 class="text-xl font-bold text-gray-800 mb-2">Morrys GO</h6>
+                            <p class="text-gray-600 text-sm">
+                                Plataforma móvil para iOS y Android, similar a las plataformas de pedir taxis como Didi
+                                o Uber, desarrollada con React Native y Firebase.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">React
+                                    Native</span>
+                                <span
+                                    class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full ml-1">Firebase</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 web php">
-                        <div class="portfolio-item">
-                            <img src="private/assets/img/proyectos-img/proyecto3/SII2.jpeg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
+                    <!-- Proyecto 3 -->
+                    <div class="portfolio-item python card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="private/assets/img/proyectos-img/proyecto2/sii.png"
+                                class="w-full h-48 object-cover transition duration-300 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <button class="bg-white text-gray-800 px-4 py-2 rounded-lg font-semibold">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h6 class="text-xl font-bold text-gray-800 mb-2">Excel con Python</h6>
+                            <p class="text-gray-600 text-sm">
+                                Este proyecto utiliza Python para automatizar la generación de reportes en Excel. Se
+                                emplean pandas, openpyxl y xlsxwriter para manipular datos y agregar gráficos dinámicos.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Python</span>
+                                <span
+                                    class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full ml-1">Pandas</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 python">
-                        <div class="portfolio-item">
-                            <img src="private/assets/img/proyectos-img/proyecto2/sii.png" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Excel con python</h6>
-                                    <p class="subtitle">Este proyecto utiliza <strong>Python</strong> para automatizar
-                                        la generación de reportes en <strong>Excel</strong>. Se emplean
-                                        <strong>pandas</strong>, <strong>openpyxl</strong> y <strong>xlsxwriter</strong>
-                                        para manipular datos y agregar gráficos dinámicos.
-                                    </p>
-                                </div>
+                    <!-- Proyecto 4 -->
+                    <div class="portfolio-item python card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="private/assets/img/proyectos-img/proyecto5/sankey_chart.png"
+                                class="w-full h-48 object-cover transition duration-300 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <button class="bg-white text-gray-800 px-4 py-2 rounded-lg font-semibold">
+                                    Ver proyecto
+                                </button>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 python">
-                        <div class="portfolio-item">
-                            <img src="private/assets/img/proyectos-img/proyecto5/sankey_chart.png" class="img-fluid">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Excel con Python</h6>
-                                    <p class="subtitle">
-                                        Este proyecto utiliza <strong>Python</strong> para automatizar la generación de reportes en <strong>Excel</strong>. 
-                                        Se emplean <strong>pandas</strong> para la manipulación de datos, <strong>plotly</strong> para la creación de gráficos dinámicos 
-                                        y <strong>openpyxl</strong> para la manipulación de archivos Excel. Además, se genera un <strong>Diagrama de Sankey</strong> 
-                                        para visualizar las ventas por categoría y región, y se integra en un archivo Excel junto con los datos procesados.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
+                        <div class="p-6">
+                            <h6 class="text-xl font-bold text-gray-800 mb-2">Excel con Python - Diagrama Sankey</h6>
+                            <p class="text-gray-600 text-sm">
+                                Este proyecto utiliza Python para automatizar la generación de reportes en Excel. Se
+                                emplean pandas para la manipulación de datos, plotly para la creación de gráficos
+                                dinámicos y openpyxl para la manipulación de archivos Excel.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Python</span>
+                                <span
+                                    class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full ml-1">Plotly</span>
                             </div>
                         </div>
                     </div>
@@ -422,271 +454,373 @@
         </div>
     </section>
 
-    <!-- END SECTION PORTAFOLIO -->
-
-
-    <!-- MIS CERTIFICADOS -->
-
-    <section id="Certificados" class="container">
-        <h2 class="text-primary section-header">Certificados</h2>
-        <div class="accordion accordion-flush" id="certificatesAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="programmingHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#programmingCollapse" aria-expanded="false" aria-controls="programmingCollapse">
-                        Programación
-                    </button>
+    <!-- TECNOLOGÍAS Y HABILIDADES -->
+    <section id="tecnologias" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">
+                    <span class="text-red-600">🚀 Tecnologías</span> y Habilidades
                 </h2>
-                <div id="programmingCollapse" class="accordion-collapse collapse" aria-labelledby="programmingHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">Google IT Automation with Python – Coursera (Noviembre 2024
-                                – Diciembre
-                                2024)</li>
-                            <li class="list-group-item">Google IT Support (Agoto 2024 – Diciembre 2024)</li>
-                            <li class="list-group-item">Desarrollador de JavaScript (Node.js y React) – Capacítate
-                                para el Empleo (Nov 2024)<a
-                                    href="private/assets/img/certificados-duc/Desarrollador de JavaScript (Node.js).pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a></li>
-                            <li class="list-group-item">Desarrollador PHP (Orientado a Objetos) – Capacítate para el
-                                Empleo (Noviembre 2024)</li>
-                            <li class="list-group-item">Programador en C# – Capacítate para el Empleo (Noviembre
-                                2024)
-                            </li>
-                            <li class="list-group-item">Diplomado de Sitios Web – Capacítate
-                                para el Empleo (Noviembre 2024)<a
-                                    href="private/assets/img/certificados-duc/Técnico en integridad web.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a></li>
-                            <li class="list-group-item">Introduction to Git and GitHub – Coursera (Noviembre 2024)<a
-                                    href="private/assets/img/certificados-duc/Introduction to Git and GitHub.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a></li>
-                            <li class="list-group-item">Design thinking para app– soy lider.net (abril 2024)<a
-                                    href="private/assets/img/certificados-duc/design thinking para app.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a></li>
-                            <li class="list-group-item">Crash Course on Python – Coursera (Abril 2024 – Mayo 2024)<a
-                                    href="private/assets/img/certificados-duc/Crash Course on Python.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a></li>
-                            <li class="list-group-item">Diplomado: Ciencia de Datos – TECNM (Octubre 2023 – Febrero
-                                2024)
-                                <a href="private/assets/img/certificados-duc/Ciencia de datos.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Foundations of User Experience (UX) Design – Coursera
-                                (Noviembre
-                                2024) <a
-                                    href="private/assets/img/certificados-duc/Fundations of user experience (UX) Design.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Build Dynamic User Interfaces (UI) for Websites – Coursera
-                                (Noviembre 2024)
-                                <a href="private/assets/img/certificados-duc/Build Dynamic User Interfaces (UI) for Websites.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Tester – Capacitate para trabajo
-                                (Noviembre 2023)
-                                <a href="private/assets/img/certificados-duc/Tester.pdf" class="btn btn-link ms-2"
-                                    download>
-                                    Descargar
-                                </a>
-                            </li>
-                        </ul>
+
+                <!-- Lenguajes -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Lenguajes</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/PHP-777BB3?style=for-the-badge&logo=php&logoColor=white"
+                            alt="PHP" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                            alt="React" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                            alt="React Native" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
+                            alt="Python" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"
+                            alt="Ruby" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                            alt="HTML5" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                            alt="CSS3" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                            alt="JavaScript" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+                            alt="Node.js" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=c-sharp&logoColor=white"
+                            alt="C#" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                            alt="C++" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                            alt="TypeScript" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
-            </div>
 
-            <!-- Acordeón de Metodología -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="methodologyHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#methodologyCollapse" aria-expanded="false" aria-controls="methodologyCollapse">
-                        Metodologías
-                    </button>
-                </h2>
-                <div id="methodologyCollapse" class="accordion-collapse collapse" aria-labelledby="methodologyHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">La Semilla Ágil: Contexto de Scrum – Academia Ágil (Abril
-                                2024)
-                                <a href="private/assets/img/certificados-duc/La semilla agil contexto de scrum.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Scrum Fundamentals – SCRUMstudy (Abril 2024)
-                                <a href="private/assets/img/certificados-duc/Scrum Fundamentls.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Introducción a Six Sigma – Coursera (Abril 2024)</li>
-                        </ul>
+                <!-- Desarrollo Móvil -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">📱 Desarrollo Móvil</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                            alt="React Native" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
+                            alt="Flutter" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/FlutterFlow-02569B?style=for-the-badge&logo=flutter&logoColor=white"
+                            alt="FlutterFlow" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Xamarin-3498DB?style=for-the-badge&logo=xamarin&logoColor=white"
+                            alt="Xamarin" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white"
+                            alt="Ionic" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white"
+                            alt="Expo" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
-            </div>
 
-            <!-- Acordeón de Inglés -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="englishHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#englishCollapse" aria-expanded="false" aria-controls="englishCollapse">
-                        Inglés
-                    </button>
-                </h2>
-                <div id="englishCollapse" class="accordion-collapse collapse" aria-labelledby="englishHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">English for Career Development (Agosto 2024 – Diciembre
-                                2024)
-
-                            </li>
-                        </ul>
+                <!-- Desarrollo Web -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">🌐 Desarrollo Web</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+                            alt="Next.js" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white"
+                            alt="Nuxt.js" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white"
+                            alt="Astro" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Remix-000000?style=for-the-badge&logo=remix&logoColor=white"
+                            alt="Remix" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=rubyonrails&logoColor=white"
+                            alt="Ruby on Rails" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
+                            alt="Flask" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"
+                            alt="Django" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"
+                            alt="Laravel" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Yii2-F68A1F?style=for-the-badge&logo=yii&logoColor=white"
+                            alt="Yii2" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+                            alt="Angular" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"
+                            alt="Vue.js" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
+                            alt="ASP.NET Core" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Tailwind_CSS-007ACC?style=for-the-badge&logo=tailwindcss&logoColor=white"
+                            alt="Tailwind CSS" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
+                            alt="Bootstrap" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Material_Angular-757DE8?style=for-the-badge&logo=angular&logoColor=white"
+                            alt="Material Angular" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
-            </div>
 
-            <!-- Acordeón de Nube -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="cloudHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#cloudCollapse" aria-expanded="false" aria-controls="cloudCollapse">
-                        Nube
-                    </button>
-                </h2>
-                <div id="cloudCollapse" class="accordion-collapse collapse" aria-labelledby="cloudHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Oracle Cloud Data Management (Abril 2024)
-                                <a href="private/assets/img/certificados-duc/Oracle Cloud Data Management.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Oracle Cloud Infrastructure (Abril 2024)
-                                <a href="private/assets/img/certificados-duc/Oracle Cloud Infrastructure.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">La nube AWS (Diciembre 2023)
-                                <a href="private/assets/img/certificados-duc/LA NUBE ASW.pdf" class="btn btn-link ms-2"
-                                    download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Fundametos en computo en la nube - Capacitate para trabajo
-                                (Diciembre 2023)
-                                <a href="private/assets/img/certificados-duc/Fundamentos del cómputo en la nube.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                        </ul>
+                <!-- Herramientas No-Code/Low-Code -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">🛠 Herramientas No-Code/Low-Code</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/Microsoft_Power_Apps-742774?style=for-the-badge&logo=microsoft-powerapps&logoColor=white"
+                            alt="Power Apps" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Bubble-000000?style=for-the-badge&logo=bubble&logoColor=white"
+                            alt="Bubble" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Webflow-4353FF?style=for-the-badge&logo=webflow&logoColor=white"
+                            alt="Webflow" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
-            </div>
 
-            <!-- Acordeón de base de datos -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="bdHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#bdCollapse" aria-expanded="false" aria-controls="bdCollapse">
-                        Base de datos
-                    </button>
-                </h2>
-                <div id="bdCollapse" class="accordion-collapse collapse" aria-labelledby="bdHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">Curador de datos (Octubre 2023)<a
-                                    href="private/assets/img/certificados-duc/curador de datos.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                            <li class="list-group-item">Database Foundations (Marzo 2023)<a
-                                    href="private/assets/img/certificados-duc/Base de datos.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-
-                        </ul>
+                <!-- Cloud & DevOps -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">☁️ Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                            alt="Docker" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                            alt="Kubernetes" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=black"
+                            alt="AWS" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Azure-0083FF?style=for-the-badge&logo=microsoftazure&logoColor=white"
+                            alt="Azure" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/GitHub_Actions-FF6C37?style=for-the-badge&logo=githubactions&logoColor=white"
+                            alt="GitHub Actions" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white"
+                            alt="Azure DevOps" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"
+                            alt="Google Cloud" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+                            alt="Vercel" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+                            alt="Netlify" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
-            </div>
 
-            <!-- Acordeón de otros -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="otrosHeader">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#otrosCollapse" aria-expanded="false" aria-controls="otrosCollapse">
-                        Otros
-                    </button>
-                </h2>
-                <div id="otrosCollapse" class="accordion-collapse collapse" aria-labelledby="otrosHeader"
-                    data-bs-parent="#certificatesAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">Excel basico a Avanzado - Santander Academy (Octubre 2024)<a
-                                    href="private/assets/img/certificados-duc/Excel intermedio.pdf"
-                                    class="btn btn-link ms-2" download>
-                                    Descargar
-                                </a>
-                            </li>
-                        </ul>
+                <!-- Sistemas Operativos -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Sistemas Operativos</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white"
+                            alt="macOS" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+                            alt="Windows" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+                            alt="Ubuntu" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Linux-3A3D42?style=for-the-badge&logo=linux&logoColor=white"
+                            alt="Linux" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Solaris-FF6600?style=for-the-badge&logo=oracle&logoColor=white"
+                            alt="Solaris" class="hover:scale-105 transition-transform duration-300" />
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Bases de Datos</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                            alt="MySQL" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Sybase-003B57?style=for-the-badge&logo=sap&logoColor=white"
+                            alt="Sybase" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+                            alt="MongoDB" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
+                            alt="Redis" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
+                            alt="PostgreSQL" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"
+                            alt="SQLite" class="hover:scale-105 transition-transform duration-300" />
+                        <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"
+                            alt="MariaDB" class="hover:scale-105 transition-transform duration-300" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- CERTIFICADOS END -->
 
-    <br>
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12">
+                        <span class="text-red-600">Mis</span> Certificados
+                    </h2>
 
-    <!-- FOOTER  -->
+                    <!-- Grid de certificados -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <!-- Certificado 1 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4">
+                                <i class="fas fa-certificate text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Desarrollo Web Full Stack</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Certificación en desarrollo web completo con tecnologías
+                                    modernas.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2024</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-    <footer class="d-flex flex-wrap justify-content-center align-items-center border-top py-3"
-        style="background-color: #e3f2fd;" <p class="col-md-4 mb-0 text-center text-muted">© 2025 Derechos reservados
-        para Ing. Medina</p>
+                        <!-- Certificado 2 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-4">
+                                <i class="fas fa-cloud text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Cloud Computing</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Especialización en infraestructura y servicios en la nube.
+                                </p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2023</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 3 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4">
+                                <i class="fas fa-mobile-alt text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Desarrollo Móvil</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Certificación en desarrollo de aplicaciones móviles
+                                    nativas e híbridas.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2023</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 4 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-orange-600 to-red-600 text-white p-4">
+                                <i class="fas fa-database text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Gestión de Bases de Datos</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Especialización en diseño y administración de bases de
+                                    datos.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2022</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 5 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4">
+                                <i class="fas fa-shield-alt text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Ciberseguridad</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Certificación en seguridad informática y protección de
+                                    datos.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2022</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 6 -->
+                        <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="bg-gradient-to-r from-teal-600 to-green-600 text-white p-4">
+                                <i class="fas fa-graduation-cap text-2xl mb-2"></i>
+                                <h4 class="font-bold text-lg">Metodologías Ágiles</h4>
+                            </div>
+                            <div class="p-6">
+                                <p class="text-gray-600 mb-4">Certificación en Scrum Master y metodologías de desarrollo
+                                    ágil.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2021</span>
+                                    <button class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                        <i class="fas fa-external-link-alt"></i> Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón para descargar certificados -->
+                    <div class="text-center mt-8">
+                        <a href="private/assets/img/certificados-duc/"
+                            class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg">
+                            <i class="fas fa-download mr-2"></i>
+                            Descargar Todos los Certificados
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-gray-500 text-sm">
+                    © 2024 Angel Uriel Dominguez Medina. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
 
-    <!-- END FOOTER -->
+    <!-- JavaScript para funcionalidad -->
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        // Portfolio filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-red-600', 'text-white');
+                    b.classList.add('bg-gray-200', 'text-gray-700');
+                });
 
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+                // Add active class to clicked button
+                btn.classList.remove('bg-gray-200', 'text-gray-700');
+                btn.classList.add('bg-red-600', 'text-white');
 
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+                const filter = btn.getAttribute('data-filter');
 
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navbar = document.querySelector('nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            // Add mobile menu functionality here
+            console.log('Mobile menu clicked');
+        });
+    </script>
 </body>
 
 </html>
